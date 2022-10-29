@@ -5,6 +5,29 @@ It utilizes zip library to encrypt any content and upload it to Google Drive - t
 
 The application can only see and work with files it made, your other files cannot be seen or accessed.
 
+# Build and install GEM:
+
+<pre>
+Go to https://developers.google.com/drive/api/v3/quickstart/ruby
+Click on Enable the Drive API.
+Fill in a recognizable name and click Next.
+In configure OAuth, select Desktop app and click Create.
+Download the credentials.json file.
+Place the credentials file into YOUR_HOME_DIRECTORY/secure-gdrive/credentials.json
+
+Install GEM:
+cd enc-drive-backup
+gem build enc-drive-backup.gemspec
+gem install enc-drive-backup-0.1.0.gem
+secure-gdrive --help
+
+First usage will require you to authorize the app on your Google Drive:
+secure-gdrive --list
+You will be asked to go to Google Drive website, click Authorize and paste the verification code back into console
+</pre>
+
+# Use CLI (after install):
+
 Help:
 <pre>
 secure-gdrive
