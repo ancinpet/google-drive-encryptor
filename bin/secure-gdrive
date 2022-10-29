@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'enc-drive-backup/securegdrive'
+
+SecureGDrive.start(ARGV)
